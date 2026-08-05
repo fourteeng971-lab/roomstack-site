@@ -2,100 +2,398 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Support — RoomStack</title>
+<title>RoomStack — Home inventory, room by room</title>
+<meta name="description" content="Photograph and catalog everything you own, room by room. Private, offline, and insurer-ready — with PDF reports and optional iCloud sync. Free on iPhone and iPad.">
+<meta name="theme-color" content="#F4EFE7" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#1A1815" media="(prefers-color-scheme:dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RoomStack — Home inventory, room by room">
+<meta property="og:description" content="Photograph and catalog everything you own, room by room. Private, offline, and insurer-ready — with PDF reports and optional iCloud sync. Free on iPhone and iPad.">
+<meta property="og:image" content="https://roomstack.app/assets/icon.png">
+<meta property="og:url" content="https://roomstack.app/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="./assets/icon.png"><link rel="apple-touch-icon" href="./assets/icon-180.png">
+<link rel="canonical" href="https://roomstack.app/">
 <style>
-:root{--accent:#C1674A;--bg:#F4EFE7;--surface:#fff;--ink:#2A2724;--muted:#6E665D;--line:#E3DACB}
-@media (prefers-color-scheme:dark){:root{--bg:#191714;--surface:#231F1B;--ink:#F1EBE3;--muted:#A79B8D;--line:#3A332C}}
+:root{
+ --accent:#C1674A;--accent-strong:#A9553B;--accent-soft:rgba(193,103,74,.10);
+ --bg:#F4EFE7;--surface:#fff;--surface-muted:#EFE9DF;--ink:#2A2724;--muted:#6E665D;
+ --line:#E3DACB;--placeholder:#E7E0D3;--shadow:0 18px 40px -24px rgba(42,39,36,.35);
+ --radius-card:18px;--radius-control:12px;
+ --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ --round:ui-rounded,"SF Pro Rounded","Hiragino Maru Gothic ProN",-apple-system,
+   BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+ --accent:#D47A5A;--accent-strong:#E08A69;--accent-soft:rgba(212,122,90,.14);
+ --bg:#1A1815;--surface:#26221E;--surface-muted:#2E2A25;--ink:#F2EDE4;--muted:#A79B8D;
+ --line:#3A352F;--placeholder:#332F2A;--shadow:0 18px 40px -24px rgba(0,0,0,.6);
+}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);
- font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:720px;margin:0 auto;padding:32px 20px 72px}
-header.site{display:flex;align-items:center;gap:12px;margin-bottom:28px}
-.logo{width:44px;height:44px;border-radius:11px;background:var(--accent);flex:none;
- display:grid;place-items:center;color:#fff;font-weight:700;font-size:19px}
-header.site strong{font-size:19px}
-nav a{color:var(--accent);text-decoration:none;margin-right:16px;font-weight:600;font-size:15px}
-nav a:hover{text-decoration:underline}
-main{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
-h1{font-size:27px;margin:0 0 4px}
-.eff{color:var(--muted);font-size:14px;margin:0 0 22px}
-h2{font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);
- margin:26px 0 8px}
-p{margin:0 0 12px}
-ul,ol{margin:0 0 12px;padding-left:22px}
-li{margin-bottom:6px}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);
+ -webkit-font-smoothing:antialiased;text-size-adjust:100%}
 a{color:var(--accent)}
-footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
-.card{border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin-bottom:12px;
- background:var(--bg)}
-.card h3{margin:0 0 6px;font-size:16px}
-.card p{margin:0;color:var(--muted);font-size:14.5px}
-.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
- padding:11px 20px;border-radius:10px;font-weight:600}
-</style>
-<body><div class="wrap">
-<header class="site"><div class="logo">R</div><strong>RoomStack</strong></header>
-<nav><a href="./" style="opacity:.55">Support</a> <a href="./privacy.html">Privacy</a> <a href="./terms.html">Terms</a></nav>
-<main>
-<h1>RoomStack Support</h1>
-<p class="eff">Photograph and catalog everything you own, room by room.</p>
-<p>Need a hand? Email us and we'll get back to you.</p>
-<p><a class="btn" href="mailto:roomstack1@gmail.com">Email support</a></p>
-<h2>Help topics</h2>
-<p>Every topic below is also available offline inside the app under <em>Settings &rsaquo; Help &amp; how-to</em>.</p>
-<details class="card"><summary><strong>Getting started</strong></summary>
-<p>RoomStack comes with a starter property called &quot;My Home&quot; already set up, with five common rooms ready to fill — no setup required. Rename it, add or remove rooms, or leave it as-is from the welcome screen.</p>
-<p>From there, tap the + button anywhere you see it to start adding items. There&#x27;s no &quot;right way&quot; to organize — some people do one room at a time, others do a quick pass through the whole house first and add details later.</p>
-<p>Tip: You can always reorganize later. Nothing about your starter setup is permanent.</p></details>
-<details class="card"><summary><strong>Adding your first item</strong></summary>
-<p>Tap the + button from Home, Items, or any room. RoomStack opens your camera first — snap a photo and the item is already half-saved.</p>
-<p>You only need a name or a photo to save — never both. That&#x27;s what makes it possible to fly through a whole room in a few minutes.</p>
-<p>Everything else — value, category, brand, serial number — is optional and can be filled in later from the item&#x27;s detail screen.</p>
-<p>Tip: Use &quot;Save &amp; add another&quot; to keep capturing without leaving the room you&#x27;re in.</p></details>
-<details class="card"><summary><strong>Understanding Value &amp; totals</strong></summary>
-<p>The Value field is what an item would cost to replace today — not necessarily what you originally paid. That&#x27;s the number insurers usually want.</p>
-<p>Your Home dashboard adds up every item&#x27;s value (× quantity) into one total, broken down by property or by category. Items you haven&#x27;t priced yet are tallied separately under &quot;No value yet&quot; so they never silently throw off your total — tap that number anytime to jump straight to pricing them.</p>
-<p>Changing your currency in Settings only changes the symbol shown — it never recalculates or converts the numbers you&#x27;ve already entered.</p></details>
-<details class="card"><summary><strong>Properties &amp; rooms</strong></summary>
-<p>RoomStack organizes everything in two levels: Properties (a house, a cottage, a storage unit) contain Rooms (Living Room, Garage, etc.), and every item lives in exactly one room.</p>
-<p>You can rename, add, or delete properties and rooms anytime from the Places tab. Deleting a property or room that still has items in it will ask what to do with them first — move them somewhere else, or delete them along with the container. Nothing is ever silently lost.</p>
-<p>The free plan includes up to 2 properties, each with unlimited rooms. RoomStack Pro removes the cap so you can add as many properties as you like.</p></details>
-<details class="card"><summary><strong>Deleting items</strong></summary>
-<p>Open an item and tap the ⋯ menu in the top-right, then Delete. You&#x27;ll be asked to confirm before anything is removed.</p>
-<p>Changed your mind? Right after deleting, tap Undo in the banner at the bottom of the screen — the item, including all of its photos and details, comes right back.</p></details>
-<details class="card"><summary><strong>Deleting rooms</strong></summary>
-<p>Open a room, tap the ⋯ menu in the top-right, and choose Delete.</p>
-<p>If the room still has items, RoomStack asks what to do with them first: move them all to another room, or delete them along with the room. Nothing is ever lost silently.</p>
-<p>Right after deleting, an Undo banner appears at the bottom of the screen so you can bring the room — and everything in it — straight back.</p></details>
-<details class="card"><summary><strong>Deleting properties</strong></summary>
-<p>Open a property from the Places tab, tap the ⋯ menu, and choose Delete.</p>
-<p>If the property still contains rooms and items, you can move its rooms to another property — keeping them together — or delete the property and everything inside it. Deleting your only remaining property is called out clearly, since it leaves nowhere to file items until you add a new one.</p>
-<p>As with items and rooms, an Undo banner appears right after so you can reverse the deletion.</p></details>
-<details class="card"><summary><strong>Backing up &amp; restoring manually</strong></summary>
-<p>A manual backup is a single file holding your entire inventory — every property, room, and item, with all photos and values. It&#x27;s free (no Pro needed) and it&#x27;s the copy you can keep anywhere, safe from anything that happens to your phone.</p>
-<p>To back up:<br>1. Go to Settings → Export a backup file.<br>2. Tap &quot;Create backup file.&quot;<br>3. Choose where to save it — Files, iCloud Drive, Mail, or AirDrop to another device.<br>4. Keep a copy somewhere outside your home.</p>
-<p>To restore:<br>1. Go to Settings → Restore from backup.<br>2. Tap &quot;Choose backup file&quot; and pick a backup you saved earlier.<br>3. Confirm. Restoring replaces everything currently in RoomStack on this device — ideal for a new phone or a reinstall.</p>
-<p>Tip: because restoring replaces what&#x27;s on the device, export a fresh backup of anything you want to keep before restoring an older one. And back up again whenever you&#x27;ve added a lot of items, so your saved copy stays current.</p></details>
-<details class="card"><summary><strong>Backing up with iCloud</strong></summary>
-<p>iCloud backup &amp; sync is part of RoomStack Pro. Turn it on in Settings to keep a copy of your entire inventory in your own personal iCloud account — encrypted, visible only to you, and kept in sync across every device signed into your Apple ID. We never see this copy; there&#x27;s no server on our end at all.</p>
-<p>If you&#x27;re not signed into iCloud on your device, this toggle won&#x27;t do anything until you sign in from your device&#x27;s system Settings.</p>
-<p>You don&#x27;t need Pro to keep your data safe: exporting a backup file is free. Go to Settings → Export a backup file anytime and save it somewhere else — Files, email, a cloud drive of your choice — then restore it later from Settings → Restore from backup. An inventory that only exists on the device it&#x27;s protecting isn&#x27;t much use after a fire or theft.</p></details>
-<details class="card"><summary><strong>Generating and exporting a report</strong></summary>
-<p>RoomStack Pro unlocks PDF and CSV reports. Tap the share icon on Home, or on any property or room, to choose what to include — your whole inventory, one property, or one room — and pick a format.</p>
-<p>The PDF report includes a summary page (totals by category and room) followed by one page per item with its photo, value, and details — the document most insurers ask for. The CSV file is the same data in spreadsheet form, useful for adjusters or your own records.</p>
-<p>Tip: Once you&#x27;ve generated a report, save a copy somewhere outside your home — the whole point of an inventory is that it survives what your belongings might not.</p></details>
-<details class="card"><summary><strong>Camera or photo access isn&#x27;t working</strong></summary>
-<p>If RoomStack can&#x27;t open your camera, it&#x27;s almost always because camera access was turned off — either you tapped &quot;Don&#x27;t Allow&quot; once, or it was turned off in system Settings. RoomStack will show a prompt with a direct link to fix this in Settings → RoomStack → Camera.</p>
-<p>You can still add items without the camera — choosing &quot;Enter manually&quot; lets you save an item with just a name, and you can add a photo later once access is restored.</p>
-<p>Choosing a photo from your library never needs a separate permission — RoomStack only ever sees the exact photos you pick, nothing else in your library.</p></details>
-<details class="card"><summary><strong>RoomStack Pro — what&#x27;s included</strong></summary>
-<p>RoomStack Pro is a one-time purchase — not a subscription. It never renews and never expires. It unlocks:</p>
-<ul><li>Unlimited items (the free version is capped at 25)</li><li>Unlimited properties (the free version includes 2)</li><li>iCloud backup &amp; sync across all your devices</li><li>PDF reports with photos, ready to hand to an insurer</li><li>CSV exports for spreadsheets</li></ul>
-<p>Everything else in RoomStack — rooms, photos, value totals, search, and free backup files — stays free, with no cap on rooms or photos. The free plan includes up to 2 properties and 25 items; Pro removes both limits. You can export and restore a backup file anytime without Pro.</p>
-<p>If you reinstall RoomStack or set it up on a new device, tap Settings → Restore purchases to unlock Pro again at no extra cost, using the same Apple ID you originally purchased with.</p></details>
-<h2>Legal</h2>
-<p><a href="./privacy.html">Privacy Policy</a> &middot; <a href="./terms.html">Terms of Use</a></p>
+img{max-width:100%}
+h1,h2,h3{font-family:var(--round);letter-spacing:-.015em}
+.siteheader{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);
+ backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+.siteheader .inner{max-width:1060px;margin:0 auto;padding:12px 20px;display:flex;
+ align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
+ font-family:var(--round);font-weight:700;font-size:18px}
+.brand img{width:32px;height:32px;border-radius:8px;display:block}
+.sitenav{margin-left:auto;display:flex;align-items:center;gap:18px}
+.sitenav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px}
+.sitenav a:hover,.sitenav a.here{color:var(--accent)}
+.sitenav .cta{background:var(--accent);color:#fff;padding:8px 16px;border-radius:99px;font-size:14.5px}
+.sitenav .cta:hover{background:var(--accent-strong);color:#fff}
+@media (max-width:640px){.sitenav{gap:12px}.sitenav .hide-s{display:none}}
+.sitefooter{border-top:1px solid var(--line);margin-top:64px}
+.sitefooter .inner{max-width:1060px;margin:0 auto;padding:28px 20px 48px;display:flex;
+ flex-wrap:wrap;gap:12px 22px;align-items:center;color:var(--muted);font-size:14px}
+.sitefooter a{color:var(--muted);text-decoration:none;font-weight:600}
+.sitefooter a:hover{color:var(--accent)}
+.sitefooter .spacer{margin-left:auto}
 
-</main>
-<footer>© 2026 RoomStack · <a href="mailto:roomstack1@gmail.com">roomstack1@gmail.com</a></footer>
-</div></body></html>
+.section{max-width:1060px;margin:0 auto;padding:0 20px}
+.eyebrow{font-family:var(--round);font-weight:700;font-size:13.5px;letter-spacing:.08em;
+ text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+.hero{padding:64px 20px 8px}
+.hero .grid{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;
+ gap:48px;align-items:center}
+.hero h1{font-size:clamp(38px,5.4vw,58px);line-height:1.04;margin:0 0 18px;font-weight:800}
+.hero p.lede{font-size:19px;color:var(--muted);margin:0 0 26px;max-width:34em}
+.badges{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.badges img{height:52px;width:auto}
+.badges a{display:inline-block;transition:opacity .15s}
+.badges a:hover{opacity:.82}
+.microcopy{color:var(--muted);font-size:14.5px;margin:18px 0 0}
+.microcopy strong{color:var(--ink);font-weight:600}
+@media (max-width:860px){
+ .hero{padding-top:40px}
+ .hero .grid{grid-template-columns:1fr;gap:36px}
+}
+
+/* --- phone mockups --- */
+/* flex-start, not the default stretch: the narrower `back` phone would otherwise be pulled
+   to the taller one's height and show a band of bare frame under its screen */
+.phones{display:flex;align-items:flex-start;justify-content:center;gap:22px;perspective:1400px}
+.phone{width:246px;flex:none;border-radius:38px;background:#1c1917;padding:9px;
+ box-shadow:0 30px 60px -30px rgba(42,39,36,.55),0 2px 6px rgba(42,39,36,.18)}
+.phone .screen{position:relative;border-radius:30px;overflow:hidden;background:var(--bg);
+ aspect-ratio:9/19.5;display:flex;flex-direction:column}
+.phone .screen.shot{aspect-ratio:975/1920}
+.phone .screen > img{width:100%;height:100%;object-fit:cover;display:block}
+.phone.back{transform:translateY(26px) rotate(-4deg);width:220px}
+.phone.front{transform:translateY(-10px) rotate(2.5deg)}
+@media (max-width:860px){.phone.back{display:none}.phone.front{transform:none}}
+@media (max-width:400px){.phone{width:212px}}
+.pm{padding:13px 12px 0;font-family:var(--round);color:var(--ink);flex:1;min-height:0;
+ display:flex;flex-direction:column;overflow:hidden}
+/* mockup glyphs are stroke-only; without this they inherit stroke:none and vanish */
+.pm svg{fill:none;stroke:currentColor;flex:none}
+.pm .statusbar{display:flex;justify-content:space-between;align-items:center;
+ font-size:9.5px;font-weight:700;color:var(--ink);padding:2px 4px 9px;opacity:.85}
+.pm .statusbar .dots{display:flex;gap:3px}
+.pm .statusbar .dots i{width:4px;height:4px;border-radius:99px;background:var(--ink);opacity:.55}
+.pm h4{font-size:19px;margin:0 0 10px;font-weight:800}
+.pm .hero-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;
+ padding:12px 13px;margin-bottom:9px}
+.pm .hero-card .label{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
+ color:var(--muted);font-weight:700}
+.pm .hero-card .total{font-size:30px;font-weight:800;letter-spacing:-.02em;margin:2px 0 1px}
+.pm .hero-card .sub{font-size:10px;color:var(--muted)}
+.pm .tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:11px}
+.pm .tile{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:9px 10px}
+.pm .tile b{display:block;font-size:16px;font-weight:800}
+.pm .tile span{font-size:9.5px;color:var(--muted)}
+.pm .sect{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
+ font-weight:700;margin:0 0 7px}
+.pm .bar{margin-bottom:8px}
+.pm .bar .row{display:flex;justify-content:space-between;font-size:10.5px;margin-bottom:3px}
+.pm .bar .row span:last-child{color:var(--muted)}
+.pm .bar .track{height:6px;border-radius:99px;background:var(--placeholder);overflow:hidden}
+.pm .bar .fill{height:100%;border-radius:99px;background:var(--accent)}
+.pm .search{display:flex;align-items:center;gap:6px;background:var(--surface-muted);
+ border-radius:99px;padding:7px 11px;font-size:10.5px;color:var(--muted);margin-bottom:10px}
+.pm .search svg{width:12px;height:12px}
+.pm .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pm .cell{background:var(--surface);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.pm .cell .ph{aspect-ratio:1;background:var(--placeholder);display:grid;place-items:center}
+.pm .cell .ph svg{width:22px;height:22px;opacity:.42}
+.pm .cell .meta{padding:6px 7px 8px}
+.pm .cell .meta b{display:block;font-size:10px;font-weight:700}
+.pm .cell .meta span{font-size:8.5px;color:var(--muted)}
+.pm .cell .meta i{font-style:normal;font-size:9.5px;font-weight:700;color:var(--accent)}
+.phone .fab{position:absolute;right:14px;bottom:64px;width:40px;height:40px;border-radius:99px;
+ background:var(--accent);display:grid;place-items:center;
+ box-shadow:0 8px 18px -6px rgba(193,103,74,.7)}
+.phone .fab svg{width:17px;height:17px}
+.pm .tabbar{margin:auto -12px 0;padding:9px 22px 15px;display:flex;justify-content:space-between;
+ border-top:1px solid var(--line);background:var(--surface)}
+.pm .tabbar div{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:8px;
+ color:var(--muted);font-weight:600}
+.pm .tabbar div svg{width:15px;height:15px}
+.pm .tabbar div.on{color:var(--accent)}
+
+/* --- feature grid --- */
+.band{margin-top:96px}
+.band > h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 12px;max-width:16em;font-weight:800}
+.band > p.sub{font-size:18px;color:var(--muted);margin:0 0 34px;max-width:34em}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.features{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.features{grid-template-columns:1fr}}
+.feature{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);
+ padding:22px 22px 24px}
+.feature .ico{width:40px;height:40px;border-radius:11px;background:var(--accent-soft);
+ display:grid;place-items:center;margin-bottom:14px}
+.feature .ico svg{width:21px;height:21px;stroke:var(--accent)}
+.feature h3{font-size:17.5px;margin:0 0 7px;font-weight:700}
+.feature p{margin:0;color:var(--muted);font-size:15px}
+
+/* --- steps --- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+.step{position:relative;padding-left:52px}
+.step::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:-2px;
+ width:36px;height:36px;border-radius:99px;background:var(--accent);color:#fff;
+ display:grid;place-items:center;font-family:var(--round);font-weight:800;font-size:16px}
+.step h3{font-size:17px;margin:4px 0 6px;font-weight:700}
+.step p{margin:0;color:var(--muted);font-size:15px}
+
+/* --- privacy band --- */
+.privacy{background:var(--surface);border:1px solid var(--line);border-radius:26px;
+ padding:44px 40px;box-shadow:var(--shadow)}
+.privacy h2{font-size:clamp(26px,3.4vw,34px);margin:0 0 14px;font-weight:800}
+.privacy p{color:var(--muted);font-size:17px;margin:0 0 14px;max-width:44em}
+.privacy ul{margin:20px 0 0;padding:0;list-style:none;display:grid;
+ grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:760px){.privacy{padding:32px 24px}.privacy ul{grid-template-columns:1fr}}
+.privacy li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--ink)}
+.privacy li svg{width:18px;height:18px;flex:none;margin-top:3px;stroke:var(--accent)}
+
+/* --- pricing --- */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:820px}
+@media (max-width:700px){.plans{grid-template-columns:1fr}}
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);
+ padding:26px}
+.plan.pro{border-color:var(--accent);box-shadow:var(--shadow)}
+.plan .tag{font-family:var(--round);font-weight:800;font-size:12px;letter-spacing:.07em;
+ text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.plan h3{font-size:24px;margin:0 0 4px;font-weight:800}
+.plan .price{color:var(--muted);font-size:15px;margin:0 0 16px}
+.plan ul{margin:0;padding:0;list-style:none}
+.plan li{display:flex;gap:9px;font-size:15px;margin-bottom:9px;color:var(--ink)}
+.plan li svg{width:17px;height:17px;flex:none;margin-top:3px;stroke:var(--accent)}
+.plan li.off{color:var(--muted)}
+.plan li.off svg{stroke:var(--muted)}
+
+/* --- faq --- */
+.faq{max-width:760px}
+.faq details{border-bottom:1px solid var(--line);padding:16px 2px}
+.faq summary{cursor:pointer;font-family:var(--round);font-weight:700;font-size:17px;
+ list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-size:22px;font-weight:700;flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--muted);margin:10px 0 0;font-size:15.5px}
+
+/* --- closing cta --- */
+.closing{text-align:center;background:var(--accent);border-radius:26px;padding:56px 28px;color:#fff}
+.closing h2{font-size:clamp(28px,3.8vw,40px);margin:0 0 12px;color:#fff;font-weight:800}
+.closing p{margin:0 auto 26px;max-width:30em;font-size:18px;color:rgba(255,255,255,.92)}
+.closing .badges{justify-content:center}
+.closing .microcopy{color:rgba(255,255,255,.85)}
+.closing .microcopy strong{color:#fff}
+
+/* --- showcase rows (real screens beside copy) --- */
+.showcase{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;
+ margin-top:72px}
+.showcase.flip .art{order:2}
+@media (max-width:820px){.showcase{grid-template-columns:1fr;gap:32px;margin-top:56px}
+ .showcase.flip .art{order:0}}
+.showcase h3{font-size:clamp(24px,3vw,31px);margin:10px 0 12px;font-weight:800}
+.showcase p{color:var(--muted);font-size:17px;margin:0 0 12px}
+.showcase .art{display:flex;justify-content:center}
+/* the two report pages, stacked like paper on a desk. The right padding is the room the
+   rotated back sheet swings into — without it the rotation pushes past the section edge and
+   the page picks up a horizontal scrollbar. */
+.sheets{position:relative;width:min(100%,420px);padding:0 30px 26px 0}
+/* height:auto is load-bearing: the <img> carries width/height attributes for layout
+   stability, and without this the scaled-down width leaves the attribute height in place
+   and the page renders stretched */
+.sheets img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);
+ display:block;box-shadow:0 22px 44px -26px rgba(42,39,36,.5)}
+.sheets .front{position:relative;z-index:2}
+/* Sized to the same box as the front sheet — two pages of one report are the same size.
+   It has to be an explicit width, not left/right insets: an absolutely positioned replaced
+   element resolves width:auto to its intrinsic width and ignores `right` entirely. */
+.sheets .behind{position:absolute;top:22px;left:0;width:calc(100% - 30px);z-index:1;
+ transform:rotate(3deg);transform-origin:bottom right}
+@media (prefers-reduced-motion:no-preference){
+ .sheets .behind{transition:transform .25s ease}
+ .sheets:hover .behind{transform:rotate(5deg) translateY(-6px)}
+}
+.showcase .phone{width:236px}
+.ticks{margin:18px 0 0;padding:0;list-style:none}
+.ticks li{display:flex;gap:10px;font-size:15.5px;margin-bottom:8px}
+.ticks li svg{width:18px;height:18px;flex:none;margin-top:3px;stroke:var(--accent);fill:none}
+</style>
+<body>
+<header class="siteheader"><div class="inner">
+<a class="brand" href="./"><img src="./assets/icon.png" alt="" width="32" height="32">RoomStack</a>
+<nav class="sitenav"><a href="./#features" class="hide-s">Features</a><a href="./support.html">Support</a><a href="./privacy.html" class="hide-s">Privacy</a><a class="cta" href="https://apps.apple.com/us/app/roomstack/id6791416859">Download</a></nav>
+</div></header>
+
+<section class="hero"><div class="grid">
+<div>
+<p class="eyebrow">Home inventory, room by room</p>
+<h1>Know what you own, before you have to prove it.</h1>
+<p class="lede">RoomStack photographs and catalogs everything in your home — room by room — so if
+fire, theft, or a flood ever hits, you have a complete, valued, photographic record ready to hand
+your insurer.</p>
+<div class="badges"><a href="https://apps.apple.com/us/app/roomstack/id6791416859" aria-label="Download RoomStack on the App Store"><img src="./assets/app-store-badge.svg" alt="Download on the App Store" width="156" height="52"></a></div>
+<p class="microcopy"><strong>Free to start.</strong> No account, no sign-in, nothing collected.
+Pro is a one-time purchase — never a subscription.</p>
+</div>
+<div class="phones">
+<div class="phone back"><div class="screen shot"><img src="./shots/items.jpg" alt="The RoomStack items grid: photographed items with their room and value" width="620" height="1221"></div></div>
+<div class="phone front"><div class="screen shot"><img src="./shots/home.jpg" alt="The RoomStack home screen: a total estimated value of $25,483 across 23 items, with a breakdown by property and recently added items" width="620" height="1221"></div></div>
+</div>
+</div></section>
+
+<section class="section band" id="features">
+<p class="eyebrow">Why RoomStack</p>
+<h2>Built for the afternoon you hope never comes.</h2>
+<p class="sub">Insurers ask for a room-by-room list with photos and values. Almost nobody has one,
+because making it is tedious. RoomStack’s entire design is about removing that tedium.</p>
+<div class="features"><div class="feature"><div class="ico"><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5A2.5 2.5 0 015.5 6h1.2l1-2h6.6l1 2h1.2A2.5 2.5 0 0119 8.5v8A2.5 2.5 0 0116.5 19h-11A2.5 2.5 0 013 16.5z"/><circle cx="11" cy="12" r="3.4"/></svg></div><h3>Photo-first, so it actually gets done</h3><p>Snap a photo and the item already exists. Name, value, category, serial number — all optional, all addable later. A whole room takes minutes, not an evening.</p></div>
+<div class="feature"><div class="ico"><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3l8 4.5-8 4.5-8-4.5z"/><path d="M3 12l8 4.5 8-4.5"/><path d="M3 16.5L11 21l8-4.5"/></svg></div><h3>Organized the way a home is</h3><p>Property → Room → Item. Start from the ready-made “My Home” with common rooms already set up, then rename, add, or remove anything. Unlimited rooms and photos, free.</p></div>
+<div class="feature"><div class="ico"><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9"/><path d="M10 19V4"/><path d="M16 19v-7"/><path d="M2 21h18"/></svg></div><h3>One honest number</h3><p>Every item’s replacement value adds up into a single total, broken down by property and category. Items you haven’t priced are tallied separately, so the total never lies to you.</p></div>
+<div class="feature"><div class="ico"><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h7l5 5v13H6z"/><path d="M13 3v5h5"/><path d="M9 13h6M9 17h6"/></svg></div><h3>Reports an insurer will accept</h3><p>Export a PDF with a summary page and one page per item — photo, value, details — or a CSV for spreadsheets and adjusters. The document you hope you never need.</p></div>
+<div class="feature"><div class="ico"><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="14" height="10" rx="2.5"/><path d="M7.5 10V7.5a3.5 3.5 0 017 0V10"/></svg></div><h3>Private by design</h3><p>No account, no sign-in, no analytics, nothing collected. Your inventory lives on your device. There is no server on our end to leak it.</p></div>
+<div class="feature"><div class="ico"><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 18a3.5 3.5 0 01-.3-6.99A5 5 0 0116 9.6a3.2 3.2 0 01-.2 8.4z"/><path d="M11 12v5"/><path d="M8.8 14.8L11 17l2.2-2.2"/></svg></div><h3>Backed up on your terms</h3><p>Free backup files you can save anywhere, plus optional iCloud sync into your own private iCloud account — encrypted, visible only to you, in sync across your devices.</p></div></div>
+
+<div class="showcase">
+<div class="art"><div class="phone"><div class="screen shot"><img src="./shots/detail.jpg" alt="An item&#x27;s detail screen showing its photo, value, category, brand, model, and serial number" loading="lazy" width="620" height="1221"></div></div></div>
+<div>
+<p class="eyebrow">Every detail</p>
+<h3>Serial numbers are what claims turn on.</h3>
+<p>An item can be just a photo and a name — or a full record with value, category, brand,
+model, serial number, purchase date, and as many photos as you want to take. Fill in as much
+as the item deserves and nothing more.</p>
+<ul class="ticks">
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Unlimited photos per item, no cap on the free plan</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Search by name, brand, or serial number</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Deleted something by mistake? Undo brings it back, photos and all</span></li>
+</ul>
+</div>
+</div>
+
+<div class="showcase flip">
+<div class="art"><div class="sheets"><img class="behind" src="./shots/report.jpg" alt="Page one of a RoomStack PDF inventory report: a total estimated value of $25,483 with breakdowns by category and by room" loading="lazy" width="1040" height="1346"><img class="front" src="./shots/report-items.jpg" alt="Page two of the report: an itemised table with a photo, location, category, serial number, quantity, and value for every item" loading="lazy" width="1040" height="1346"></div></div>
+<div>
+<p class="eyebrow">Reports</p>
+<h3>The document you hand to the adjuster.</h3>
+<p>RoomStack Pro exports a PDF with a summary page — totals by category and by room — followed
+by one page per item with its photo, value, and details. Or a CSV, if someone wants it in a
+spreadsheet.</p>
+<ul class="ticks">
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Whole inventory, one property, or a single room</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Share straight to Files, Mail, or anywhere else</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Free backup files too — save a copy outside the house</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section band" id="how">
+<p class="eyebrow">How it works</p>
+<h2>Three steps, one afternoon.</h2>
+<div class="steps"><div class="step"><h3>Walk a room</h3><p>Open RoomStack, tap +, and the camera is already up. Photograph what’s in front of you and keep moving.</p></div>
+<div class="step"><h3>Fill in what matters</h3><p>Add values to the things that would hurt to replace. Skip the rest — you can price anything later from its detail screen.</p></div>
+<div class="step"><h3>Keep the record safe</h3><p>Export a backup or turn on iCloud sync, and generate a PDF report to store somewhere outside the house.</p></div></div>
+</section>
+
+<section class="section band" id="privacy">
+<div class="privacy">
+<p class="eyebrow">Privacy</p>
+<h2>A photographic list of everything you own is exactly the kind of thing you don’t hand to a
+stranger.</h2>
+<p>So we didn’t build anywhere to send it. RoomStack has no account, no login, no analytics and no
+backend. Your inventory sits in your device’s storage, and optional iCloud sync goes to your
+private iCloud account — encrypted, visible only to you.</p>
+<ul>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>No data collected — Apple’s privacy label says so</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>No account or sign-in, ever</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Works fully offline</span></li>
+</ul>
+<p style="margin-top:20px"><a href="./privacy.html">Read the full privacy policy →</a></p>
+</div>
+</section>
+
+<section class="section band" id="pricing">
+<p class="eyebrow">Pricing</p>
+<h2>Start free. Unlock everything once.</h2>
+<div class="plans">
+<div class="plan">
+<p class="tag">Free</p>
+<h3>RoomStack</h3>
+<p class="price">Free, forever</p>
+<ul>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Up to 25 items</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Up to 2 properties</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Unlimited rooms and photos</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Backup and restore files</span></li>
+<li class="off"><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5l12 12M17 5L5 17"/></svg><span>PDF &amp; CSV reports</span></li>
+</ul>
+</div>
+<div class="plan pro">
+<p class="tag">Pro</p>
+<h3>RoomStack Pro</h3>
+<p class="price">One-time purchase · no subscription</p>
+<ul>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Unlimited items</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>Unlimited properties</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>iCloud backup &amp; sync across devices</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>PDF reports with photos, for insurers</span></li>
+<li><svg viewBox="0 0 22 22" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5l4.5 4.5L18 6.5"/></svg><span>CSV export for spreadsheets</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section band" id="faq">
+<p class="eyebrow">Questions</p>
+<h2>Good to know.</h2>
+<div class="faq"><details><summary>Is RoomStack free?</summary><p>Yes. The free version covers up to 25 items across 2 properties, with unlimited rooms and photos, and free backup files. RoomStack Pro is a one-time purchase that removes the caps and adds iCloud sync plus PDF and CSV reports.</p></details>
+<details><summary>Is Pro a subscription?</summary><p>No. Pro is a single one-time purchase. It never renews and never expires, and it restores free on any device signed into the same Apple ID.</p></details>
+<details><summary>Where is my data stored?</summary><p>On your device. RoomStack has no account system and no server. If you turn on iCloud sync with Pro, your inventory syncs through your own private iCloud account, which we can’t see.</p></details>
+<details><summary>Does it work offline?</summary><p>Completely. Everything — capture, search, totals, exports — works with no connection at all.</p></details>
+<details><summary>What device do I need?</summary><p>An iPhone or iPad running iOS 17 or later. RoomStack is a universal app, so one purchase covers both.</p></details>
+<details><summary>What languages does it support?</summary><p>English, Spanish, French, German, Italian, Portuguese (Brazil), Swedish, Japanese, Korean, and Simplified Chinese — following your device language automatically.</p></details></div>
+<p style="margin-top:22px;color:var(--muted)">More detail in the
+<a href="./support.html">full help topics</a>, or email
+<a href="mailto:roomstack1@gmail.com">roomstack1@gmail.com</a>.</p>
+</section>
+
+<section class="section band">
+<div class="closing">
+<h2>Your home, catalogued this weekend.</h2>
+<p>Free to start, private by design, and ready long before you need it.</p>
+<div class="badges"><a href="https://apps.apple.com/us/app/roomstack/id6791416859" aria-label="Download RoomStack on the App Store"><img src="./assets/app-store-badge.svg" alt="Download on the App Store" width="156" height="52"></a></div>
+<p class="microcopy">iPhone &amp; iPad · iOS 17 or later · <strong>10 languages</strong></p>
+</div>
+</section>
+
+<footer class="sitefooter"><div class="inner">
+<span>© 2026 RoomStack</span>
+<a href="./support.html">Support</a>
+<a href="./privacy.html">Privacy</a>
+<a href="./terms.html">Terms</a>
+<a href="mailto:roomstack1@gmail.com">roomstack1@gmail.com</a>
+<span class="spacer"></span>
+<a href="https://apps.apple.com/us/app/roomstack/id6791416859">Download on the App Store</a>
+</div></footer>
+</body></html>

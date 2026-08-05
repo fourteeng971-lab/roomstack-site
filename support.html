@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — RoomStack</title>
+<meta name="description" content="Help topics, how-to guides, and contact details for RoomStack, the photo-first home inventory app for iPhone and iPad.">
+<meta name="theme-color" content="#F4EFE7" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#1A1815" media="(prefers-color-scheme:dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Support — RoomStack">
+<meta property="og:description" content="Help topics, how-to guides, and contact details for RoomStack, the photo-first home inventory app for iPhone and iPad.">
+<meta property="og:image" content="https://roomstack.app/assets/icon.png">
+<meta property="og:url" content="https://roomstack.app/support">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="./assets/icon.png"><link rel="apple-touch-icon" href="./assets/icon-180.png">
+<link rel="canonical" href="https://roomstack.app/support">
+<style>
+:root{
+ --accent:#C1674A;--accent-strong:#A9553B;--accent-soft:rgba(193,103,74,.10);
+ --bg:#F4EFE7;--surface:#fff;--surface-muted:#EFE9DF;--ink:#2A2724;--muted:#6E665D;
+ --line:#E3DACB;--placeholder:#E7E0D3;--shadow:0 18px 40px -24px rgba(42,39,36,.35);
+ --radius-card:18px;--radius-control:12px;
+ --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ --round:ui-rounded,"SF Pro Rounded","Hiragino Maru Gothic ProN",-apple-system,
+   BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+ --accent:#D47A5A;--accent-strong:#E08A69;--accent-soft:rgba(212,122,90,.14);
+ --bg:#1A1815;--surface:#26221E;--surface-muted:#2E2A25;--ink:#F2EDE4;--muted:#A79B8D;
+ --line:#3A352F;--placeholder:#332F2A;--shadow:0 18px 40px -24px rgba(0,0,0,.6);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);
+ -webkit-font-smoothing:antialiased;text-size-adjust:100%}
+a{color:var(--accent)}
+img{max-width:100%}
+h1,h2,h3{font-family:var(--round);letter-spacing:-.015em}
+.siteheader{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);
+ backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+.siteheader .inner{max-width:1060px;margin:0 auto;padding:12px 20px;display:flex;
+ align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
+ font-family:var(--round);font-weight:700;font-size:18px}
+.brand img{width:32px;height:32px;border-radius:8px;display:block}
+.sitenav{margin-left:auto;display:flex;align-items:center;gap:18px}
+.sitenav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px}
+.sitenav a:hover,.sitenav a.here{color:var(--accent)}
+.sitenav .cta{background:var(--accent);color:#fff;padding:8px 16px;border-radius:99px;font-size:14.5px}
+.sitenav .cta:hover{background:var(--accent-strong);color:#fff}
+@media (max-width:640px){.sitenav{gap:12px}.sitenav .hide-s{display:none}}
+.sitefooter{border-top:1px solid var(--line);margin-top:64px}
+.sitefooter .inner{max-width:1060px;margin:0 auto;padding:28px 20px 48px;display:flex;
+ flex-wrap:wrap;gap:12px 22px;align-items:center;color:var(--muted);font-size:14px}
+.sitefooter a{color:var(--muted);text-decoration:none;font-weight:600}
+.sitefooter a:hover{color:var(--accent)}
+.sitefooter .spacer{margin-left:auto}
+
+.wrap{max-width:760px;margin:0 auto;padding:36px 20px 8px}
+main.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);
+ padding:30px;box-shadow:var(--shadow)}
+main.doc h1{font-size:30px;margin:0 0 4px}
+.eff{color:var(--muted);font-size:14px;margin:0 0 22px}
+main.doc h2{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);
+ margin:28px 0 8px}
+main.doc p{margin:0 0 12px}
+main.doc ul,main.doc ol{margin:0 0 12px;padding-left:22px}
+main.doc li{margin-bottom:6px}
+.card{border:1px solid var(--line);border-radius:var(--radius-control);padding:14px 18px;
+ margin-bottom:10px;background:var(--bg)}
+.card summary{cursor:pointer;font-family:var(--round)}
+.card summary::marker{color:var(--accent)}
+.card p,.card li{color:var(--muted);font-size:15px}
+.card > :not(summary){margin-top:10px}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+ padding:12px 22px;border-radius:var(--radius-control);font-weight:700;font-family:var(--round)}
+.btn:hover{background:var(--accent-strong)}
+</style>
+<body>
+<header class="siteheader"><div class="inner">
+<a class="brand" href="./"><img src="./assets/icon.png" alt="" width="32" height="32">RoomStack</a>
+<nav class="sitenav"><a href="./#features" class="hide-s">Features</a><a href="./support.html" class="here">Support</a><a href="./privacy.html" class="hide-s">Privacy</a><a class="cta" href="https://apps.apple.com/us/app/roomstack/id6791416859">Download</a></nav>
+</div></header>
+<div class="wrap"><main class="doc">
+<h1>RoomStack Support</h1>
+<p class="eff">Photograph and catalog everything you own, room by room.</p>
+<p>Need a hand? Email us and we'll get back to you.</p>
+<p><a class="btn" href="mailto:roomstack1@gmail.com">Email support</a></p>
+<h2>Help topics</h2>
+<p>Every topic below is also available offline inside the app under <em>Settings &rsaquo; Help &amp; how-to</em>.</p>
+<details class="card"><summary><strong>Getting started</strong></summary>
+<p>RoomStack comes with a starter property called &quot;My Home&quot; already set up, with five common rooms ready to fill — no setup required. Rename it, add or remove rooms, or leave it as-is from the welcome screen.</p>
+<p>From there, tap the + button anywhere you see it to start adding items. There&#x27;s no &quot;right way&quot; to organize — some people do one room at a time, others do a quick pass through the whole house first and add details later.</p>
+<p>Tip: You can always reorganize later. Nothing about your starter setup is permanent.</p></details>
+<details class="card"><summary><strong>Adding your first item</strong></summary>
+<p>Tap the + button from Home, Items, or any room. RoomStack opens your camera first — snap a photo and the item is already half-saved.</p>
+<p>You only need a name or a photo to save — never both. That&#x27;s what makes it possible to fly through a whole room in a few minutes.</p>
+<p>Everything else — value, category, brand, serial number — is optional and can be filled in later from the item&#x27;s detail screen.</p>
+<p>Tip: Use &quot;Save &amp; add another&quot; to keep capturing without leaving the room you&#x27;re in.</p></details>
+<details class="card"><summary><strong>Understanding Value &amp; totals</strong></summary>
+<p>The Value field is what an item would cost to replace today — not necessarily what you originally paid. That&#x27;s the number insurers usually want.</p>
+<p>Your Home dashboard adds up every item&#x27;s value (× quantity) into one total, broken down by property or by category. Items you haven&#x27;t priced yet are tallied separately under &quot;No value yet&quot; so they never silently throw off your total — tap that number anytime to jump straight to pricing them.</p>
+<p>Changing your currency in Settings only changes the symbol shown — it never recalculates or converts the numbers you&#x27;ve already entered.</p></details>
+<details class="card"><summary><strong>Properties &amp; rooms</strong></summary>
+<p>RoomStack organizes everything in two levels: Properties (a house, a cottage, a storage unit) contain Rooms (Living Room, Garage, etc.), and every item lives in exactly one room.</p>
+<p>You can rename, add, or delete properties and rooms anytime from the Places tab. Deleting a property or room that still has items in it will ask what to do with them first — move them somewhere else, or delete them along with the container. Nothing is ever silently lost.</p>
+<p>The free plan includes up to 2 properties, each with unlimited rooms. RoomStack Pro removes the cap so you can add as many properties as you like.</p></details>
+<details class="card"><summary><strong>Finding things: search, sort &amp; filter</strong></summary>
+<p>Every list — Places, the rooms inside a property, Items, and the items inside a room — has a search box with two buttons beside it.</p>
+<p>Search matches as you type. On item lists it looks at names, brands, models, serial numbers, and notes, so a serial number you only half-remember is often enough to find something.</p>
+<p>The arrows button sorts. Items can be ordered by recently added, by value, or by name; properties and rooms by name or by value. Your choice sticks — it stays put as you move around the app, and it&#x27;s still there the next time you open RoomStack.</p>
+<p>The lines button filters. On item lists you can narrow by category, by property or room, or show only the items you haven&#x27;t priced yet. On Places you can filter by property type or room type. Tap the button again to change or clear it.</p>
+<p>Tip: a filled-in button means that tool is currently doing something. Sort and filter work together, and search narrows whatever they&#x27;ve already produced.</p></details>
+<details class="card"><summary><strong>Appearance &amp; display</strong></summary>
+<p>RoomStack follows your device&#x27;s Light/Dark setting out of the box. If you&#x27;d rather pin it one way, go to Settings → Appearance and choose Light or Dark. Automatic hands the choice back to iOS.</p>
+<p>The Items tab can show your things as a photo grid or as a compact list — use the two buttons at the top right of that tab to switch. RoomStack remembers which you prefer.</p>
+<p>Both of these are per-device preferences. They aren&#x27;t part of your inventory, so they don&#x27;t sync between devices and they aren&#x27;t included in a backup file.</p></details>
+<details class="card"><summary><strong>Deleting items</strong></summary>
+<p>Open an item and tap the ⋯ menu in the top-right, then Delete. You&#x27;ll be asked to confirm before anything is removed.</p>
+<p>Changed your mind? Right after deleting, tap Undo in the banner at the bottom of the screen — the item, including all of its photos and details, comes right back.</p></details>
+<details class="card"><summary><strong>Deleting rooms</strong></summary>
+<p>Open a room, tap the ⋯ menu in the top-right, and choose Delete.</p>
+<p>If the room still has items, RoomStack asks what to do with them first: move them all to another room, or delete them along with the room. Nothing is ever lost silently.</p>
+<p>Right after deleting, an Undo banner appears at the bottom of the screen so you can bring the room — and everything in it — straight back.</p></details>
+<details class="card"><summary><strong>Deleting properties</strong></summary>
+<p>Open a property from the Places tab, tap the ⋯ menu, and choose Delete.</p>
+<p>If the property still contains rooms and items, you can move its rooms to another property — keeping them together — or delete the property and everything inside it. Deleting your only remaining property is called out clearly, since it leaves nowhere to file items until you add a new one.</p>
+<p>As with items and rooms, an Undo banner appears right after so you can reverse the deletion.</p></details>
+<details class="card"><summary><strong>Backing up &amp; restoring manually</strong></summary>
+<p>A manual backup is a single file holding your entire inventory — every property, room, and item, with all photos and values. It&#x27;s free (no Pro needed) and it&#x27;s the copy you can keep anywhere, safe from anything that happens to your phone.</p>
+<p>To back up:<br>1. Go to Settings → Export a backup file.<br>2. Tap &quot;Create backup file.&quot;<br>3. Choose where to save it — Files, iCloud Drive, Mail, or AirDrop to another device.<br>4. Keep a copy somewhere outside your home.</p>
+<p>To restore:<br>1. Go to Settings → Restore from backup.<br>2. Tap &quot;Choose backup file&quot; and pick a backup you saved earlier.<br>3. Confirm. Restoring replaces everything currently in RoomStack on this device — ideal for a new phone or a reinstall.</p>
+<p>Tip: because restoring replaces what&#x27;s on the device, export a fresh backup of anything you want to keep before restoring an older one. And back up again whenever you&#x27;ve added a lot of items, so your saved copy stays current.</p></details>
+<details class="card"><summary><strong>Backing up with iCloud</strong></summary>
+<p>iCloud backup &amp; sync is part of RoomStack Pro. Turn it on in Settings to keep a copy of your entire inventory in your own personal iCloud account — encrypted, visible only to you, and kept in sync across every device signed into your Apple ID. We never see this copy; there&#x27;s no server on our end at all.</p>
+<p>If you&#x27;re not signed into iCloud on your device, this toggle won&#x27;t do anything until you sign in from your device&#x27;s system Settings.</p>
+<p>You don&#x27;t need Pro to keep your data safe: exporting a backup file is free. Go to Settings → Export a backup file anytime and save it somewhere else — Files, email, a cloud drive of your choice — then restore it later from Settings → Restore from backup. An inventory that only exists on the device it&#x27;s protecting isn&#x27;t much use after a fire or theft.</p></details>
+<details class="card"><summary><strong>Generating and exporting a report</strong></summary>
+<p>RoomStack Pro unlocks PDF and CSV reports. Tap the share icon on Home, or on any property or room, to choose what to include — your whole inventory, one property, or one room — and pick a format.</p>
+<p>The PDF report includes a summary page (totals by category and room) followed by one page per item with its photo, value, and details — the document most insurers ask for. The CSV file is the same data in spreadsheet form, useful for adjusters or your own records.</p>
+<p>Tip: Once you&#x27;ve generated a report, save a copy somewhere outside your home — the whole point of an inventory is that it survives what your belongings might not.</p></details>
+<details class="card"><summary><strong>Camera or photo access isn&#x27;t working</strong></summary>
+<p>If RoomStack can&#x27;t open your camera, it&#x27;s almost always because camera access was turned off — either you tapped &quot;Don&#x27;t Allow&quot; once, or it was turned off in system Settings. RoomStack will show a prompt with a direct link to fix this in Settings → RoomStack → Camera.</p>
+<p>You can still add items without the camera — choosing &quot;Enter manually&quot; lets you save an item with just a name, and you can add a photo later once access is restored.</p>
+<p>Choosing a photo from your library never needs a separate permission — RoomStack only ever sees the exact photos you pick, nothing else in your library.</p></details>
+<details class="card"><summary><strong>RoomStack Pro — what&#x27;s included</strong></summary>
+<p>RoomStack Pro is a one-time purchase — not a subscription. It never renews and never expires. It unlocks:</p>
+<ul><li>Unlimited items (the free version is capped at 25)</li><li>Unlimited properties (the free version includes 2)</li><li>iCloud backup &amp; sync across all your devices</li><li>PDF reports with photos, ready to hand to an insurer</li><li>CSV exports for spreadsheets</li></ul>
+<p>Everything else in RoomStack — rooms, photos, value totals, search, and free backup files — stays free, with no cap on rooms or photos. The free plan includes up to 2 properties and 25 items; Pro removes both limits. You can export and restore a backup file anytime without Pro.</p>
+<p>If you reinstall RoomStack or set it up on a new device, tap Settings → Restore purchases to unlock Pro again at no extra cost, using the same Apple ID you originally purchased with.</p></details>
+<h2>Legal</h2>
+<p><a href="./privacy.html">Privacy Policy</a> &middot; <a href="./terms.html">Terms of Use</a></p>
+
+</main></div>
+<footer class="sitefooter"><div class="inner">
+<span>© 2026 RoomStack</span>
+<a href="./support.html">Support</a>
+<a href="./privacy.html">Privacy</a>
+<a href="./terms.html">Terms</a>
+<a href="mailto:roomstack1@gmail.com">roomstack1@gmail.com</a>
+<span class="spacer"></span>
+<a href="https://apps.apple.com/us/app/roomstack/id6791416859">Download on the App Store</a>
+</div></footer>
+</body></html>

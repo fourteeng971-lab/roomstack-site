@@ -2,41 +2,86 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RoomStack Terms of Use — RoomStack</title>
+<title>RoomStack Terms of Use</title>
+<meta name="description" content="Terms of use for the RoomStack app.">
+<meta name="theme-color" content="#F4EFE7" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#1A1815" media="(prefers-color-scheme:dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RoomStack Terms of Use">
+<meta property="og:description" content="Terms of use for the RoomStack app.">
+<meta property="og:image" content="https://roomstack.app/assets/icon.png">
+<meta property="og:url" content="https://roomstack.app/terms">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="./assets/icon.png"><link rel="apple-touch-icon" href="./assets/icon-180.png">
+<link rel="canonical" href="https://roomstack.app/terms">
 <style>
-:root{--accent:#C1674A;--bg:#F4EFE7;--surface:#fff;--ink:#2A2724;--muted:#6E665D;--line:#E3DACB}
-@media (prefers-color-scheme:dark){:root{--bg:#191714;--surface:#231F1B;--ink:#F1EBE3;--muted:#A79B8D;--line:#3A332C}}
+:root{
+ --accent:#C1674A;--accent-strong:#A9553B;--accent-soft:rgba(193,103,74,.10);
+ --bg:#F4EFE7;--surface:#fff;--surface-muted:#EFE9DF;--ink:#2A2724;--muted:#6E665D;
+ --line:#E3DACB;--placeholder:#E7E0D3;--shadow:0 18px 40px -24px rgba(42,39,36,.35);
+ --radius-card:18px;--radius-control:12px;
+ --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ --round:ui-rounded,"SF Pro Rounded","Hiragino Maru Gothic ProN",-apple-system,
+   BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+ --accent:#D47A5A;--accent-strong:#E08A69;--accent-soft:rgba(212,122,90,.14);
+ --bg:#1A1815;--surface:#26221E;--surface-muted:#2E2A25;--ink:#F2EDE4;--muted:#A79B8D;
+ --line:#3A352F;--placeholder:#332F2A;--shadow:0 18px 40px -24px rgba(0,0,0,.6);
+}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);
- font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:720px;margin:0 auto;padding:32px 20px 72px}
-header.site{display:flex;align-items:center;gap:12px;margin-bottom:28px}
-.logo{width:44px;height:44px;border-radius:11px;background:var(--accent);flex:none;
- display:grid;place-items:center;color:#fff;font-weight:700;font-size:19px}
-header.site strong{font-size:19px}
-nav a{color:var(--accent);text-decoration:none;margin-right:16px;font-weight:600;font-size:15px}
-nav a:hover{text-decoration:underline}
-main{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
-h1{font-size:27px;margin:0 0 4px}
-.eff{color:var(--muted);font-size:14px;margin:0 0 22px}
-h2{font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);
- margin:26px 0 8px}
-p{margin:0 0 12px}
-ul,ol{margin:0 0 12px;padding-left:22px}
-li{margin-bottom:6px}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);
+ -webkit-font-smoothing:antialiased;text-size-adjust:100%}
 a{color:var(--accent)}
-footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
-.card{border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin-bottom:12px;
- background:var(--bg)}
-.card h3{margin:0 0 6px;font-size:16px}
-.card p{margin:0;color:var(--muted);font-size:14.5px}
+img{max-width:100%}
+h1,h2,h3{font-family:var(--round);letter-spacing:-.015em}
+.siteheader{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);
+ backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+.siteheader .inner{max-width:1060px;margin:0 auto;padding:12px 20px;display:flex;
+ align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
+ font-family:var(--round);font-weight:700;font-size:18px}
+.brand img{width:32px;height:32px;border-radius:8px;display:block}
+.sitenav{margin-left:auto;display:flex;align-items:center;gap:18px}
+.sitenav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px}
+.sitenav a:hover,.sitenav a.here{color:var(--accent)}
+.sitenav .cta{background:var(--accent);color:#fff;padding:8px 16px;border-radius:99px;font-size:14.5px}
+.sitenav .cta:hover{background:var(--accent-strong);color:#fff}
+@media (max-width:640px){.sitenav{gap:12px}.sitenav .hide-s{display:none}}
+.sitefooter{border-top:1px solid var(--line);margin-top:64px}
+.sitefooter .inner{max-width:1060px;margin:0 auto;padding:28px 20px 48px;display:flex;
+ flex-wrap:wrap;gap:12px 22px;align-items:center;color:var(--muted);font-size:14px}
+.sitefooter a{color:var(--muted);text-decoration:none;font-weight:600}
+.sitefooter a:hover{color:var(--accent)}
+.sitefooter .spacer{margin-left:auto}
+
+.wrap{max-width:760px;margin:0 auto;padding:36px 20px 8px}
+main.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);
+ padding:30px;box-shadow:var(--shadow)}
+main.doc h1{font-size:30px;margin:0 0 4px}
+.eff{color:var(--muted);font-size:14px;margin:0 0 22px}
+main.doc h2{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);
+ margin:28px 0 8px}
+main.doc p{margin:0 0 12px}
+main.doc ul,main.doc ol{margin:0 0 12px;padding-left:22px}
+main.doc li{margin-bottom:6px}
+.card{border:1px solid var(--line);border-radius:var(--radius-control);padding:14px 18px;
+ margin-bottom:10px;background:var(--bg)}
+.card summary{cursor:pointer;font-family:var(--round)}
+.card summary::marker{color:var(--accent)}
+.card p,.card li{color:var(--muted);font-size:15px}
+.card > :not(summary){margin-top:10px}
 .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
- padding:11px 20px;border-radius:10px;font-weight:600}
+ padding:12px 22px;border-radius:var(--radius-control);font-weight:700;font-family:var(--round)}
+.btn:hover{background:var(--accent-strong)}
 </style>
-<body><div class="wrap">
-<header class="site"><div class="logo">R</div><strong>RoomStack</strong></header>
-<nav><a href="./">Support</a> <a href="./privacy.html">Privacy</a> <a href="./terms.html" style="opacity:.55">Terms</a></nav>
-<main>
+<body>
+<header class="siteheader"><div class="inner">
+<a class="brand" href="./"><img src="./assets/icon.png" alt="" width="32" height="32">RoomStack</a>
+<nav class="sitenav"><a href="./#features" class="hide-s">Features</a><a href="./support.html">Support</a><a href="./privacy.html" class="hide-s">Privacy</a><a class="cta" href="https://apps.apple.com/us/app/roomstack/id6791416859">Download</a></nav>
+</div></header>
+<div class="wrap"><main class="doc">
 <h1>RoomStack Terms of Use</h1>
 <p class="eff">Effective date: July 15, 2026</p>
 <p>By downloading, installing, or using RoomStack (&quot;the App&quot;), you agree to these Terms of Use (&quot;Terms&quot;). If you don&#x27;t agree, please don&#x27;t use the App.</p>
@@ -62,6 +107,14 @@ footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
 <p>These Terms are governed by the laws of the Province of Alberta and the federal laws of Canada that apply in Alberta, without regard to conflict-of-law rules. You and we agree to the exclusive jurisdiction of the courts located in Alberta, Canada. Nothing in this section takes away any mandatory consumer-protection rights you have under the laws of the country where you live.</p>
 <h2>11. CONTACT</h2>
 <p>Questions? Email <a href="mailto:roomstack1@gmail.com">roomstack1@gmail.com</a>, or use Settings → Contact support inside the App.</p>
-</main>
-<footer>© 2026 RoomStack · <a href="mailto:roomstack1@gmail.com">roomstack1@gmail.com</a></footer>
-</div></body></html>
+</main></div>
+<footer class="sitefooter"><div class="inner">
+<span>© 2026 RoomStack</span>
+<a href="./support.html">Support</a>
+<a href="./privacy.html">Privacy</a>
+<a href="./terms.html">Terms</a>
+<a href="mailto:roomstack1@gmail.com">roomstack1@gmail.com</a>
+<span class="spacer"></span>
+<a href="https://apps.apple.com/us/app/roomstack/id6791416859">Download on the App Store</a>
+</div></footer>
+</body></html>
