@@ -55,6 +55,8 @@ h1,h2,h3{font-family:var(--round);letter-spacing:-.015em}
 .sitefooter a{color:var(--muted);text-decoration:none;font-weight:600}
 .sitefooter a:hover{color:var(--accent)}
 .sitefooter .spacer{margin-left:auto}
+/* the address is stored reversed in the markup; this flips it back for anyone without JS */
+.eml-r{unicode-bidi:bidi-override;direction:rtl}
 
 .wrap{max-width:760px;margin:0 auto;padding:36px 20px 8px}
 main.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);
@@ -85,7 +87,7 @@ main.doc li{margin-bottom:6px}
 <h1>RoomStack Support</h1>
 <p class="eff">Photograph and catalog everything you own, room by room.</p>
 <p>Need a hand? Email us and we'll get back to you.</p>
-<p><a class="btn" href="mailto:roomstack1@gmail.com">Email support</a></p>
+<p><a class="eml btn" href="#" data-u="roomstack1" data-d="gmail.com" data-keep="1">Email support</a></p>
 <h2>Help topics</h2>
 <p>Every topic below is also available offline inside the app under <em>Settings &rsaquo; Help &amp; how-to</em>.</p>
 <details class="card"><summary><strong>Getting started</strong></summary>
@@ -163,8 +165,15 @@ main.doc li{margin-bottom:6px}
 <a href="./support.html">Support</a>
 <a href="./privacy.html">Privacy</a>
 <a href="./terms.html">Terms</a>
-<a href="mailto:roomstack1@gmail.com">roomstack1@gmail.com</a>
+<a class="eml" href="#" data-u="roomstack1" data-d="gmail.com" data-keep="1">Email support</a>
 <span class="spacer"></span>
 <a href="https://apps.apple.com/us/app/roomstack/id6791416859">Download on the App Store</a>
 </div></footer>
+<script>
+document.querySelectorAll("a.eml").forEach(function (a) {
+  var address = a.dataset.u + String.fromCharCode(64) + a.dataset.d;
+  a.href = "mailto:" + address;
+  if (!a.dataset.keep) a.textContent = address;   // normal text, so it copies correctly
+});
+</script>
 </body></html>
